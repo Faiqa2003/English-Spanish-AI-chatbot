@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spanish AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <h1>🇪🇸 Spanish AI</h1>
+            <p>English ↔ Spanish Assistant</p>
+        </header>
+
+        <main id="chat-box" class="chat-box">
+
+            <div class="message bot-message">
+                Hello! I'm your English ↔ Spanish AI assistant.
+            </div>
+
+        </main>
+
+        <div class="suggested-prompts" id="suggested-prompts">
+            <p>Try asking:</p>
+            <button class="suggestion-btn" type="button">
+                Translate "Good morning" into Spanish
+            </button>
+            <button class="suggestion-btn" type="button">
+                What does "¿Cómo estás?" mean?
+            </button>
+            <button class="suggestion-btn" type="button">
+                Help me practice Spanish
+            </button>
+        </div>
+
+        <div id="typing-indicator" class="typing-indicator" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="typing-text">AI is typing...</span>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type in English or Spanish..." autocomplete="off">
+
+            <button id="send-btn">Send</button>
+            <button id="clear-btn" type="button">Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
